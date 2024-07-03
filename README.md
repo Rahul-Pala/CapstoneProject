@@ -1,2 +1,2 @@
 # CapstoneProject
-This is Software Engineering Capstone Project. It is a website of a theme park.
+This is my Software Engineering Capstone Project. It is a website of a theme park.
