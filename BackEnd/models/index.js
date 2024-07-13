@@ -1,4 +1,11 @@
 'use strict'
 module.exports = {
- Cartoon: require('./cartoons')
+ User: require('./user'),
+ Attraction: require('./attraction'),
+ Show: require('./show'),
+ Queue: require('./queue'),
+ Adrenaline: require('./adrenaline'),
+ Service: require('./service'),
 };
+
+

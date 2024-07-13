@@ -3,16 +3,16 @@ const axios = require('axios');
 const Models = require('../models');
 
 
-const storeCartoons = async (res) => {
+const storeAttractions = async (res) => {
     try {
 
-    let response = await axios.get('https://api.sampleapis.com/cartoons/cartoons2D')
+    let response = await axios.get('http://localhost:3000/attractions')
     
-        const cartoons = response.data;
-        console.log(cartoons)
+        const attractions = response.data;
+        console.log(attractions)
 
-        await Models.Cartoon.insertMany(
-            cartoons
+        await Models.Attraction.insertMany(
+            attractions
           );
 
        
@@ -24,5 +24,5 @@ const storeCartoons = async (res) => {
 }
 
 module.exports = {
-    storeCartoons
+    storeAttractions
 }
