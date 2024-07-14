@@ -6,7 +6,7 @@ const Models = require('../models');
 const storeShows = async (res) => {
     try {
 
-    let response = await axios.get('http://localhost:3000/shows')
+    let response = await axios.get('http://localhost:3000/show')
     
         const Shows = response.data;
         console.log(Shows)

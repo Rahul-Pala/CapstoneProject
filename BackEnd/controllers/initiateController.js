@@ -22,7 +22,26 @@ const storeAttractions = async (res) => {
     }
 
 }
+const storeShows = async (res) => {
+    try {
+
+    let response = await axios.get('http://localhost:3000/show')
+    
+        const shows = response.data;
+        console.log(shows)
+
+        await Models.Show.insertMany(
+            shows
+          );
+
+       
+      res.send("end")
+    } catch (err) {
+        console.log(err.message)
+    }
+
+}
 
 module.exports = {
-    storeAttractions
+    storeAttractions, storeShows
 }

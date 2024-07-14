@@ -232,6 +232,176 @@
       "FamilyFriendly": true,
       "HeightRestriction": 40
     }
+  ],
+  "show" : [
+    {
+      "Name": "Heroic Battle",
+      "Description": "Watch your favorite superheroes come together for an epic showdown.",
+      "Image": "heroic_battle.jpg",
+      "Category": "Superhero",
+      "Duration": 30
+    },
+    {
+      "Name": "Superhero Stunt Spectacular",
+      "Description": "An action-packed stunt show featuring incredible feats and daring rescues.",
+      "Image": "superhero_stunt_spectacular.jpg",
+      "Category": "Superhero",
+      "Duration": 45
+    },
+    {
+      "Name": "Villains vs Heroes",
+      "Description": "See the ultimate clash between the most infamous villains and beloved heroes.",
+      "Image": "villains_vs_heroes.jpg",
+      "Category": "Superhero",
+      "Duration": 40
+    },
+    {
+      "Name": "Hero Academy",
+      "Description": "Join a training session where superheroes demonstrate their powers and skills.",
+      "Image": "hero_academy.jpg",
+      "Category": "Superhero",
+      "Duration": 35
+    },
+    {
+      "Name": "Justice League Live",
+      "Description": "Experience the Justice League in action as they save the world.",
+      "Image": "justice_league_live.jpg",
+      "Category": "Superhero",
+      "Duration": 50
+    },
+    {
+      "Name": "Superhero Musical",
+      "Description": "A musical extravaganza featuring songs and dances from popular superhero movies.",
+      "Image": "superhero_musical.jpg",
+      "Category": "Superhero",
+      "Duration": 60
+    },
+    {
+      "Name": "Mario Kart Live",
+      "Description": "Watch as Mario and friends race through a real-life Mario Kart course.",
+      "Image": "mario_kart_live.jpg",
+      "Category": "Mario",
+      "Duration": 30
+    },
+    {
+      "Name": "Princess Peach's Party",
+      "Description": "Join Princess Peach for a fun-filled party with games and entertainment.",
+      "Image": "princess_peach_party.jpg",
+      "Category": "Mario",
+      "Duration": 40
+    },
+    {
+      "Name": "Bowser's Challenge",
+      "Description": "Witness Bowser and Mario face off in an epic showdown.",
+      "Image": "bowsers_challenge.jpg",
+      "Category": "Mario",
+      "Duration": 35
+    },
+    {
+      "Name": "Luigi's Mansion Adventure",
+      "Description": "Follow Luigi on a spooky adventure to capture ghosts and save the day.",
+      "Image": "luigis_mansion_adventure.jpg",
+      "Category": "Mario",
+      "Duration": 45
+    },
+    {
+      "Name": "Yoshi's Island Safari",
+      "Description": "Join Yoshi on a safari through a vibrant, animated island.",
+      "Image": "yoshis_island_safari.jpg",
+      "Category": "Mario",
+      "Duration": 25
+    },
+    {
+      "Name": "Super Mario Musical",
+      "Description": "A lively musical featuring all your favorite characters from the Mario universe.",
+      "Image": "super_mario_musical.jpg",
+      "Category": "Mario",
+      "Duration": 50
+    },
+    {
+      "Name": "Mickey's Magical Parade",
+      "Description": "Enjoy a whimsical parade with Mickey and all his Disney friends.",
+      "Image": "mickeys_magical_parade.jpg",
+      "Category": "Disney",
+      "Duration": 30
+    },
+    {
+      "Name": "Frozen Sing-Along",
+      "Description": "Sing along with Anna, Elsa, and Olaf in this interactive show.",
+      "Image": "frozen_sing_along.jpg",
+      "Category": "Disney",
+      "Duration": 35
+    },
+    {
+      "Name": "Pirates of the Caribbean Adventure",
+      "Description": "Join Captain Jack Sparrow on a swashbuckling adventure.",
+      "Image": "pirates_adventure.jpg",
+      "Category": "Disney",
+      "Duration": 45
+    },
+    {
+      "Name": "Beauty and the Beast Live",
+      "Description": "Experience the enchanting story of Beauty and the Beast live on stage.",
+      "Image": "beauty_and_beast_live.jpg",
+      "Category": "Disney",
+      "Duration": 50
+    },
+    {
+      "Name": "Disney Princess Dance Party",
+      "Description": "Dance and sing with your favorite Disney princesses.",
+      "Image": "disney_princess_dance_party.jpg",
+      "Category": "Disney",
+      "Duration": 40
+    },
+    {
+      "Name": "Toy Story Mania",
+      "Description": "Join Woody, Buzz, and the gang for a fun-filled Toy Story adventure.",
+      "Image": "toy_story_mania.jpg",
+      "Category": "Disney",
+      "Duration": 30
+    },
+    {
+      "Name": "Galactic Journey",
+      "Description": "Travel through the cosmos in this spectacular space-themed show.",
+      "Image": "galactic_journey.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 40
+    },
+    {
+      "Name": "Star Warriors",
+      "Description": "Join the star warriors in their battle to save the galaxy.",
+      "Image": "star_warriors.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 45
+    },
+    {
+      "Name": "Alien Encounter",
+      "Description": "Experience a thrilling encounter with extraterrestrial beings.",
+      "Image": "alien_encounter.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 30
+    },
+    {
+      "Name": "Cosmic Dance Party",
+      "Description": "Dance the night away with aliens and astronauts under the stars.",
+      "Image": "cosmic_dance_party.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 35
+    },
+    {
+      "Name": "Journey to the Moon",
+      "Description": "Join a mission to the moon in this exciting space adventure.",
+      "Image": "journey_to_moon.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 50
+    },
+    {
+      "Name": "Starlight Spectacular",
+      "Description": "A dazzling light show set to the music of the cosmos.",
+      "Image": "starlight_spectacular.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 60
+    }
   ]
   
 }
