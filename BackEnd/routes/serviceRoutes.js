@@ -14,10 +14,7 @@ router.post("/create", (req, res) => {
   Controllers.serviceController.createService(req.body, res);
 });
 
-// Adds a POST route to create a new Service
-// router.post("/initiate", (req,res) => {
-//   Controllers.initiateController.storeServices(res);
-// });
+
 
 router.put('/:id', (req, res) => {
     Controllers.serviceController.updateService(req, res)
