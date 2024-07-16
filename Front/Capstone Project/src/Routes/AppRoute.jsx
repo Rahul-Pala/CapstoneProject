@@ -17,10 +17,14 @@ import PageNotFound from '../Pages/PageNotFound'
              <Routes>
                   <Route index element={<AdventureGalaxy/>} />
 
-                  <Route path="attractions" element={<Attractions/>}>
+                  <Route path="attractions" element={<Attractions/>} />
+                        
+                        
                         <Route path="rides" element={<Rides/>}></Route>
+                        
+                        
                         <Route path="shows" element={<Shows/>}></Route>
-                  </Route>
+                  
                 
                    <Route path="familyservice" element={<FamilyService/>}></Route>
     

@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { NavLink } from 'react-router-dom';
 
 const pages = ['Attractions', 'Family Services', 'Tickets', 'About', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -89,7 +90,7 @@ export default function NavBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <NavLink to={page.toLowerCase()}>{page}</NavLink>
                 </MenuItem>
               ))}
             </Menu>

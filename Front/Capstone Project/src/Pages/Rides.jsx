@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Rides() {
   return (
-    <div>Rides</div>
+    <div>
+     <h1>Rides</h1> 
+     
+      </div>
   )
 }
