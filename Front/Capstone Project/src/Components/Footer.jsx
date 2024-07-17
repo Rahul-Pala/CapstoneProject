@@ -6,9 +6,9 @@ export default function Footer() {
     return (
         <>
             {/* Footer */}
-            <Box sx={{ bgcolor: 'background.paper', p: 0 }} component="footer">
+            <Box sx={{ bgcolor: 'wheat', p: 0 }} component="footer">
                 <Typography variant="h6" align="center" gutterBottom>
-                    Buddy
+                    Footer
                 </Typography>
                 <Typography
                     variant="subtitle1"

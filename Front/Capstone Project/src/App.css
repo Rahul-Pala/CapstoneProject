@@ -1,3 +1,18 @@
+/* MainComponent.css */
+.main-container {
+  width: 100%; /* Adjust dimensions as needed */
+  height: 100vh; /* Adjust dimensions as needed */
+  background-image: url('https://www.youtube.com/shorts/wCOm9YMZ5FA'); /* Path to your GIF */
+  background-size: cover; /* Adjust as per your design */
+  background-repeat: no-repeat; /* Ensure it doesn't repeat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Additional styles for content inside the container */
+  background-color: white; /* Text color */
+  text-align: center;
+}
+
 #Link {
   color: white;
   margin-left: 32px;

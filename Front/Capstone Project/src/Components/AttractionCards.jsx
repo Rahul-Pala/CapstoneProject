@@ -10,7 +10,7 @@ import { Grid } from '@mui/material';
 
 export default function AttractionCards() {
     const navigate = useNavigate()
-    const options = [{name: "Rides", description: "our list of rides", link: "/rides" }, {name: "Shows", description: "Our list of shows" , link: "/shows"}]
+    const options = [{name: "Rides", description: "our list of rides", link: "/rides", image: "/public/RidePhoto.jpg" }, {name: "Shows", description: "Our list of shows" , link: "/shows"}]
   return (
     <>
     <Grid container spacing={4}>              
@@ -19,10 +19,11 @@ export default function AttractionCards() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 220 }}
-        image="/Front/Capstone Project/public/RidePhoto.jpg" //Help. 
-        title="green iguana"
+        image={option.image}
       />
+      
       <CardContent>
+      
         <Typography gutterBottom variant="h5" component="div">
           {option.name}
         </Typography>

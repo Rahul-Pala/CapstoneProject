@@ -18,6 +18,11 @@ export default function SingleRide(props) {
         <Typography gutterBottom variant="h5" component="div">
         {props.Name}
         </Typography>
+
+        <Typography variant="body2" color="red">
+         Category: {props.Category}
+        </Typography>
+        
         <Typography variant="body2" color="text.secondary">
         {props.Description}
         </Typography>

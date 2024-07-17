@@ -21,7 +21,7 @@ return(
  <Grid container spacing={4}>
                 {currentRides?.map((ride, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-      <SingleRide Name={ride.Name} Description={ride.Description} Image={ride.Image}></SingleRide>
+      <SingleRide Name={ride.Name} Description={ride.Description} Image={ride.Image} Category={ride.Category}></SingleRide>
       </Grid>))} </Grid>
   </div>
   <div>

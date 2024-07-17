@@ -6,21 +6,25 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function SingleShow() {
+export default function SingleShow(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 220 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={props.Image}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          My shows card
+          {props.Name}
+        </Typography>
+        <Typography variant="body2" color="red">
+         Category: {props.Category}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-         This is my Shows Card
+         {props.Description}
         </Typography>
+        
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
