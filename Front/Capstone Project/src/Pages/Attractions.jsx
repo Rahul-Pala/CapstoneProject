@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
-import MediaCard from '../Components/MediaCard'
+import MediaCard from '../Components/SingleShow'
 
 export default function Attractions() {
   return (

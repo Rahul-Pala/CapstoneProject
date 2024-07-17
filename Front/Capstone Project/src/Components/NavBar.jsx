@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink } from 'react-router-dom';
 
-const pages = ['Attractions', 'Family Services', 'Tickets', 'About', 'Contact Us'];
+const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: '/Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, {title: 'Contact Us', link: '/contactus'}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function NavBar() {
@@ -90,7 +90,7 @@ export default function NavBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <NavLink to={page.toLowerCase()}>{page}</NavLink>
+                  <NavLink to={page.link} onClick={handleCloseNavMenu}>{page.title}</NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -116,13 +116,7 @@ export default function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <NavLink to={page.link} onClick={handleCloseNavMenu}>{page.title}</NavLink>
             ))}
           </Box>
 
