@@ -116,7 +116,7 @@ export default function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <NavLink to={page.link} onClick={handleCloseNavMenu}>{page.title}</NavLink>
+              <NavLink to={page.link} id="Link" onClick={handleCloseNavMenu}>{page.title}</NavLink>
             ))}
           </Box>
 
