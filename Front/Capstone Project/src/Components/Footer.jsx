@@ -8,7 +8,7 @@ export default function Footer() {
             {/* Footer */}
             <Box sx={{ bgcolor: 'wheat', p: 0 }} component="footer">
                 <Typography variant="h6" align="center" gutterBottom>
-                    Footer
+                    Adventure Galaxy
                 </Typography>
                 <Typography
                     variant="subtitle1"
@@ -17,6 +17,10 @@ export default function Footer() {
                     component="p"
                 >
                     All rights reserved.
+                </Typography>
+
+                <Typography>
+                    
                 </Typography>
             </Box>
             {/* End footer */}

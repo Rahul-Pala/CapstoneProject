@@ -8,16 +8,17 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import CountA from './CountA';
+import ButtonBlue from './ButtonBlue';
 
 export default function TicketCards() {
 
     const navigate = useNavigate()
-    const tickets = [{name: "Adventure Galaxy Superpass", description: "Unlimited Visits to Rides & Shows", image: "/public/RidePhoto.jpg" },
-         {name: "Rides Superpass", description: "Unlimited visits to Rides", },
-         {name: "Shows Superpass", description: "Unlimited visits to Shows" },
-         {name: "Family Pass One", description: "Get Family Rate for 2 adults and 1 child" },
-         {name: "Family Pass Two", description: "Get Family Rate for 2 adults and 2 child" },
-         {name: "Family Pass Three", description: "Get Family Rate for 2 adults and 3 child" },
+    const tickets = [{name: "Adventure Galaxy Superpass", description: "Unlimited Visits to Rides & Shows", image: "./ticketimages/image1.jpg" },
+         {name: "Rides Superpass", description: "Unlimited visits to Rides", image: "./public/ticketimages/image2.jpg" },
+         {name: "Shows Superpass", description: "Unlimited visits to Shows", image: "./public/ticketimages/image3.jpg" },
+         {name: "Family Pass One", description: "Get Family Rate for 2 adults and 1 child", image: "./public/ticketimages/image4.jpg" },
+         {name: "Family Pass Two", description: "Get Family Rate for 2 adults and 2 child", image: "./public/ticketimages/image5.jpg" },
+         {name: "Family Pass Three", description: "Get Family Rate for 2 adults and 3 child" , image: "./public/ticketimages/image6.jpg" },
         ]
 
     return (
@@ -41,13 +42,15 @@ export default function TicketCards() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Go to {ticket.name} list</Button>
+        
+      </CardActions>
+       <CountA/>
+      <CardActions>
+      <Button size="medium">Add to Cart</Button>
+        
       </CardActions>
 
-      <CardActions>
-        
-        <CountA/>
-      </CardActions>
+      <ButtonBlue/>
     </Card>
     </Grid>)} </Grid>
     </>

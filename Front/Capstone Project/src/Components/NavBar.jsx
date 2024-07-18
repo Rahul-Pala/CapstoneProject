@@ -14,8 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink } from 'react-router-dom';
 
-const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: '/Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, {title: 'Contact Us', link: '/contactus'}];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: 'Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, ];
+const settings = ['Create Account', 'Dashboard', 'Logout'];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -45,7 +45,7 @@ export default function NavBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            link = ""
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },

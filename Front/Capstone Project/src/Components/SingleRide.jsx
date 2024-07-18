@@ -5,6 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import DatePicker from './DatePicker';
+import RatingStars from './RatingStars';
 
 export default function SingleRide(props) {
   return (
@@ -28,9 +30,14 @@ export default function SingleRide(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+      <DatePicker/>
       </CardActions>
+      <CardActions>
+        <RatingStars/> 
+        </CardActions>
+     
+      
+      
     </Card>
   );
 }

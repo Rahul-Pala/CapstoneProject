@@ -7,15 +7,15 @@ import Shows from '../Pages/Shows'
 import FamilyService from '../Pages/FamilyService'
 import Tickets from '../Pages/Tickets'
 import About from '../Pages/About'
-import ContactUs from '../Pages/ContactUs'
 import PageNotFound from '../Pages/PageNotFound'
+import CreateNewAccount from '../Pages/CreateNewAccount'
 
 
  export default function AppRoute() {
    return (
          <div>
              <Routes>
-                  <Route index element={<AdventureGalaxy/>} />
+                  <Route path='home' index element={<AdventureGalaxy/>} />
 
                   <Route path="attractions" element={<Attractions/>} />
                         
@@ -32,7 +32,7 @@ import PageNotFound from '../Pages/PageNotFound'
 
                    <Route path="about" element={<About/>}></Route> 
 
-                  <Route path="contactus" element={<ContactUs/>}></Route> 
+                  <Route path="createaccount" element={<CreateNewAccount/>}></Route>
       
                  <Route path="*" element={<PageNotFound/>} /> 
              </Routes>

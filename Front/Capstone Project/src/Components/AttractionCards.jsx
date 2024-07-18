@@ -10,12 +10,12 @@ import { Grid } from '@mui/material';
 
 export default function AttractionCards() {
     const navigate = useNavigate()
-    const options = [{name: "Rides", description: "our list of rides", link: "/rides", image: "/public/RidePhoto.jpg" }, {name: "Shows", description: "Our list of shows" , link: "/shows"}]
+    const options = [{name: "Rides", description: "List of Rides", link: "/rides", image: "./rideimages/image2.jpg" }, {name: "Shows", description: " List of Shows" , link: "/shows", image: "./public/showimages/image6.jpg"}]
   return (
     <>
     <Grid container spacing={4}>              
     {options.map((option,index)=>
-    <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
+    <Grid item key={index} xs={12} sm={6} md={4} lg={6}>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 220 }}
@@ -32,8 +32,8 @@ export default function AttractionCards() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={() =>navigate(option.link)}>Go to {option.name} list</Button>
-        <Button size="small">Learn More</Button>
+        <Button className='centerbutton' size="medium" onClick={() =>navigate(option.link)}>Click here for {option.name}</Button>
+        
       </CardActions>
     </Card>
     </Grid>)} </Grid>

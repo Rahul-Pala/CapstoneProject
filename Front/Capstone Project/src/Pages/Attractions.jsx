@@ -6,7 +6,7 @@ import AttractionCards from '../Components/AttractionCards'
 export default function Attractions() {
   return (
     <div>
-      <h1>Attractions</h1>
+      <h1 className='heading'>ATTRACTIONS</h1>
       <AttractionCards></AttractionCards>
     </div>
   )

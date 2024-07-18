@@ -4,7 +4,7 @@ import TicketCards from '../Components/TicketCards'
 export default function Tickets() {
   return (
     <div>
-      <h1>Tickets</h1>
+      <h1 className='heading'>TICKETS</h1>
       <TicketCards/>
       </div>
   )
