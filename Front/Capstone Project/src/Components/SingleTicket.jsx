@@ -17,7 +17,7 @@ export default function SingleTicket() {
 
     return (
     <>
-     <Grid container spacing={4} >              
+     <Grid container spacing={4}  >              
     {singleTickets.map((singleTicket,index)=>
     <Grid item key={index} xs={12} sm={6} md={4} lg={12}>
     <Card sx={{ maxWidth: 800 }}>

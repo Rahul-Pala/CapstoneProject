@@ -15,7 +15,7 @@ export default function AttractionCards() {
     <>
     <Grid container spacing={4}>              
     {options.map((option,index)=>
-    <Grid item key={index} xs={12} sm={6} md={4} lg={6}>
+    <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 220 }}
@@ -37,6 +37,8 @@ export default function AttractionCards() {
       </CardActions>
     </Card>
     </Grid>)} </Grid>
+    <br />
+    <br />
     </>
   );
 }

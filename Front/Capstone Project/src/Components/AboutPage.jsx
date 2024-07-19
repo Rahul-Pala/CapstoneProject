@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
 <>
 
-    <div>
+    <div className='width' >
         <h1 className='h3'>ABOUT ADVENTURE GALAXY</h1>
         <p>Welcome to Adventure Galaxy, the ultimate destination for thrill-seekers and families alike! Nestled in the heart 
             of a wondrous universe, our theme park offers an unforgettable journey through fantastical realms and exhilarating

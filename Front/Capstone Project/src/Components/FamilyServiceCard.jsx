@@ -18,7 +18,7 @@ export default function FamilyServiceCards() {
 ]
   return (
     <>
-    <Grid container spacing={4}>              
+    <Grid container spacing={4} sx={{width:'70em'}}>              
     {services.map((service,index)=>
     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
     <Card sx={{ maxWidth: 345 }}>

@@ -13,39 +13,33 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { NavLink, useNavigate } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
-
+import { useUserContext } from '../Context/UserContext';
 const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: 'Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, ];
-const settings = ['Create Account', 'Dashboard', 'Logout'];
-
+const settings = [{title: 'Create Account', link: '/createaccount'}, {title: 'Dashboard', link: '/dashboard'}, {title: 'Logout', link: '/logout'}];
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  // const{user, setUser} = useUserContext()
+  const{user, setUser} = useUserContext()
   const navigate = useNavigate()
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{width:'70em'}}>
       <Container sx={{minwidth:"100%"}}>
-        <Toolbar disableGutters>
+      <Toolbar disableGutters >
           <Button onClick={() => navigate("/")} sx={{color:"white"}}>
           <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           </Button>
-         
           <Typography
             variant="h6"
             noWrap
@@ -60,11 +54,9 @@ export default function NavBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-
           >
-            {/* {user?.email} */}
+            {user?.email}
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -125,7 +117,6 @@ export default function NavBar() {
               <NavLink to={page.link} id="Link" onClick={handleCloseNavMenu}>{page.title}</NavLink>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -148,9 +139,9 @@ export default function NavBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {settings.map((setting, index) => (
+                <MenuItem key={index} onClick={handleCloseUserMenu}>
+                  <NavLink to={setting.link} onClick={handleCloseNavMenu}>{setting.title}</NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -160,7 +151,3 @@ export default function NavBar() {
     </AppBar>
   );
 }
-
-
-
-
