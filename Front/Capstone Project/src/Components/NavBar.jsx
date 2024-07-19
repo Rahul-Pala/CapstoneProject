@@ -11,8 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
 
 const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: 'Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, ];
 const settings = ['Create Account', 'Dashboard', 'Logout'];
@@ -20,6 +20,8 @@ const settings = ['Create Account', 'Dashboard', 'Logout'];
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const{user, setUser} = useUserContext()
+  const navigate = useNavigate()
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -38,9 +40,12 @@ export default function NavBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container sx={{minwidth:"100%"}}>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Button onClick={() => navigate("/")} sx={{color:"white"}}>
+          <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          </Button>
+         
           <Typography
             variant="h6"
             noWrap
@@ -55,8 +60,9 @@ export default function NavBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+
           >
-            ADVENTURE GALAXY
+            {/* {user?.email} */}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -95,7 +101,7 @@ export default function NavBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <HomeIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap

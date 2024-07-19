@@ -13,12 +13,12 @@ import ButtonBlue from './ButtonBlue';
 export default function TicketCards() {
 
     const navigate = useNavigate()
-    const tickets = [{name: "Adventure Galaxy Superpass", description: "Unlimited Visits to Rides & Shows", image: "./ticketimages/image1.jpg" },
-         {name: "Rides Superpass", description: "Unlimited visits to Rides", image: "./public/ticketimages/image2.jpg" },
-         {name: "Shows Superpass", description: "Unlimited visits to Shows", image: "./public/ticketimages/image3.jpg" },
-         {name: "Family Pass One", description: "Get Family Rate for 2 adults and 1 child", image: "./public/ticketimages/image4.jpg" },
-         {name: "Family Pass Two", description: "Get Family Rate for 2 adults and 2 child", image: "./public/ticketimages/image5.jpg" },
-         {name: "Family Pass Three", description: "Get Family Rate for 2 adults and 3 child" , image: "./public/ticketimages/image6.jpg" },
+    const tickets = [{name: "Adventure Galaxy Superpass", description: "Unlimited Visits to Rides & Shows", image: "./ticketimages/image1.jpg", price: "$100" },
+         {name: "Rides Superpass", description: "Unlimited visits to Rides", image: "./public/ticketimages/image2.jpg", price: "$70" },
+         {name: "Shows Superpass", description: "Unlimited visits to Shows", image: "./public/ticketimages/image3.jpg", price: "$50" },
+         {name: "Family Pass One", description: "Get Family Rate for 2 adults and 1 child", image: "./public/ticketimages/image4.jpg", price: "$180" },
+         {name: "Family Pass Two", description: "Get Family Rate for 2 adults and 2 child", image: "./public/ticketimages/image5.jpg", price: "$210" },
+         {name: "Family Pass Three", description: "Get Family Rate for 2 adults and 3 child" , image: "./public/ticketimages/image6.jpg", price: "$230" },
         ]
 
     return (
@@ -40,12 +40,18 @@ export default function TicketCards() {
         <Typography variant="body2" color="text.secondary">
          {ticket.description}
         </Typography>
+
+        <Typography variant="body2" color="black">
+         {ticket.price}
+        </Typography>
       </CardContent>
       <CardActions>
         
       </CardActions>
-       <CountA/>
+       Quantity: <CountA/>
       <CardActions>
+
+      
       <Button size="medium">Add to Cart</Button>
         
       </CardActions>

@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import RatingStars from './RatingStars';
 
 export default function SingleShow(props) { console.log(props.Image)
   return (
@@ -27,9 +28,8 @@ export default function SingleShow(props) { console.log(props.Image)
         
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+        <RatingStars/>
+        </CardActions>
     </Card>
   );
 }

@@ -6,6 +6,7 @@ import AppRoute from './Routes/AppRoute'
 import Title from './Components/Title'
 import Footer from './Components/Footer'
 import NavBar from './Components/NavBar'
+import { UserHolder } from './Context/UserContext'
 
 function App() {
   
@@ -13,8 +14,10 @@ function App() {
   return (
     <>
      <Title/>
+     <UserHolder>
      <NavBar/>
      <AppRoute/>
+     </UserHolder>
      <Footer/>
     </>
   )

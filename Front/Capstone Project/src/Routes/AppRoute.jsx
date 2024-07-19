@@ -15,7 +15,7 @@ import CreateNewAccount from '../Pages/CreateNewAccount'
    return (
          <div>
              <Routes>
-                  <Route path='home' index element={<AdventureGalaxy/>} />
+                  <Route index element={<AdventureGalaxy/>} />
 
                   <Route path="attractions" element={<Attractions/>} />
                         
