@@ -1,0 +1,87 @@
+Requirement Gathering Document for Real-Time Database with External API Integration.
+
+Project Overview
+-The goal of this project is to develop a real-time database application that fetches data from an external API
+(https://api.sampleapis.com/cartoons/cartoons2D), stores it in a database (Mongodb database), and provides full CRUD (Create, Read, Update, Delete) operations. The application will follow the MVC (Model-View-Controller) architectural pattern and demonstrate the CRUD operations via Postman/Thunderclient.
+
+Requirements
+1. Functional Requirements
+1.1. Data Fetching and Initialization
+Startup Routine: The application must have a startup routine that:
+-Connects to the external API.
+-Fetches initial data.
+-Populates the database with the fetched data.
+
+1.2. CRUD Operations
+Create Operation: Ability to add new records to the database.
+Read Operation: Ability to fetch and display records from the database.
+Update Operation: Ability to modify existing records in the database.
+Delete Operation: Ability to remove records from the database.
+
+2. Non-Functional Requirements
+2.1. Performance
+The system should handle large datasets efficiently.
+Real-time updates should be processed with minimal latency.
+2.2. Scalability
+The system should be scalable to handle increased load, both in terms of API data and user requests.
+2.3. Security
+Secure connections to the external API and database.
+Proper validation and sanitization of all inputs to prevent SQL injection and other security threats.
+
+3. Technical Requirements
+3.1. Architecture
+MVC Pattern: The application should be structured according to the MVC (Model-View-Controller) architecture:
+Model: Defines the structure of the data and handles the database interactions.
+View: Provides the presentation layer to display data to the user.
+Controller: Manages user input, interacts with the Model to update the database, and updates the View.
+
+3.2. Technologies
+Backend: Node.js/Express for server-side logic.
+Database: MongoDB for storing data.
+External API: Specification of the external API to fetch data from (https://api.sampleapis.com/cartoons/cartoons2D).
+Postman/Thunderclient: Tool to test API endpoints and demonstrate CRUD operations.
+
+3.3. Development Environment
+Testing: Postman for API testing.
+
+Detailed Implementation Plan
+1. Data Fetching and Initialization
+
+1.1. External API Connection
+Define the external API endpoint and authentication method.
+Create a service to handle API requests and responses.
+
+1.2. Initial Data Fetch
+Implement a function to fetch data from the API.
+Ensure the fetched data is transformed to match the database schema.
+Insert the transformed data into the database during application startup.
+
+2. MVC Architecture Implementation
+2.1. Model
+Define the schema for the database (Mongoose for Mongodb).
+
+2.2. View
+Create templates or frontend components to display data.
+
+2.3. Controller
+Implement controllers to handle CRUD operations:
+Create: Endpoint to add a new record.
+Read: Endpoint to fetch records (single and multiple).
+Update: Endpoint to modify an existing record.
+Delete: Endpoint to remove a record.
+
+3. CRUD Operations Demonstration via Postman
+3.1. Setup Postman
+Define a collection in Postman with requests for all CRUD operations.
+3.2. Create Operation
+POST request to /create endpoint with JSON body containing new record data.
+3.3. Read Operation
+GET request to /api/cartoons/:id endpoint to fetch a specific record.
+GET request to /api/cartoons/ endpoint to fetch all records.
+3.4. Update Operation
+PUT request to /update/:id endpoint with JSON body containing updated record data.
+3.5. Delete Operation
+DELETE request to /delete/:id endpoint to remove a specific record.
+
+Conclusion
+This document outlines the requirements and implementation plan for a real-time database application that fetches data from an external API and provides full CRUD operations via an MVC architecture. The application will demonstrate its functionality using Postman for API testing.

@@ -1,0 +1,407 @@
+{
+"attractions" : [
+    {
+      "Name": "Dragon's Fury",
+      "Description": "A high-speed roller coaster with multiple loops and sharp turns.",
+      "Image": "./rideimages/ride1.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 52
+    },
+    {
+      "Name": "Thunderbolt",
+      "Description": "Experience electrifying drops and speeds on this thrilling roller coaster.",
+      "Image": "./rideimages/image2.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 54
+    },
+    {
+      "Name": "Vortex",
+      "Description": "A dizzying roller coaster that spins and twirls through the air.",
+      "Image": "./rideimages/image7.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 48
+    },
+    {
+      "Name": "Cyclone",
+      "Description": "A fast-paced coaster with dramatic drops and sharp twists.",
+      "Image": "./rideimages/image3.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 50
+    },
+    {
+      "Name": "Phantom's Revenge",
+      "Description": "A spooky themed roller coaster with surprise drops and eerie effects.",
+      "Image": "./rideimages/image4.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 52
+    },
+    {
+      "Name": "Hurricane",
+      "Description": "A powerful coaster that simulates the rush of a hurricane.",
+      "Image": "./rideimages/image5.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 54
+    },
+    {
+      "Name": "Inferno",
+      "Description": "A fiery roller coaster ride through blazing tracks and intense heat.",
+      "Image": "./rideimages/image6.jpg",
+      "Category": "Roller-Coaster",
+      "FamilyFriendly": false,
+      "HeightRestriction": 52
+    },
+    {
+      "Name": "Sky Diver",
+      "Description": "Experience free fall from great heights on this thrilling ride.",
+      "Image": "./rideimages/image7.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 48
+    },
+    {
+      "Name": "Tornado Twister",
+      "Description": "Spin around at high speeds in this intense thrill ride.",
+      "Image": "./rideimages/image8.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 50
+    },
+    {
+      "Name": "Gravity Drop",
+      "Description": "Experience a heart-pounding drop from an extreme height.",
+      "Image": "./rideimages/image9.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 52
+    },
+    {
+      "Name": "Extreme Spinner",
+      "Description": "A high-speed spinning ride that will leave you dizzy.",
+      "Image": "./rideimages/image10.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 48
+    },
+    {
+      "Name": "Wild Swing",
+      "Description": "Swing back and forth at exhilarating heights and speeds.",
+      "Image":"./rideimages/image11.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 50
+    },
+    {
+      "Name": "Rocket Blast",
+      "Description": "Get launched into the sky with this powerful thrill ride.",
+      "Image": "./rideimages/image12.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 54
+    },
+    {
+      "Name": "Mega Drop",
+      "Description": "Experience an extreme vertical drop in this thrilling ride.",
+      "Image": "./rideimages/image2.jpg",
+      "Category": "Thrill Ride",
+      "FamilyFriendly": false,
+      "HeightRestriction": 52
+    },
+    {
+      "Name": "Flying Elephants",
+      "Description": "Kids can soar through the air on their very own flying elephants.",
+      "Image": "./rideimages/image13.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 36
+    },
+    {
+      "Name": "Mini Coaster",
+      "Description": "A gentle roller coaster designed for young children.",
+      "Image": "./rideimages/image14.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 34
+    },
+    {
+      "Name": "Magic Carousel",
+      "Description": "A whimsical carousel ride with beautifully crafted horses.",
+      "Image": "./rideimages/image15.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 32
+    },
+    {
+      "Name": "Bumper Cars",
+      "Description": "Kids can drive their own bumper cars and bump into friends.",
+      "Image": "./rideimages/image16.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 36
+    },
+    {
+      "Name": "Tiny Trains",
+      "Description": "A gentle train ride through a scenic mini landscape.",
+      "Image": "./rideimages/image17.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 34
+    },
+    {
+      "Name": "Mini Ferris Wheel",
+      "Description": "A small ferris wheel designed for kids to enjoy the view.",
+      "Image": "./rideimages/image18.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 32
+    },
+    {
+      "Name": "Fantasy Boats",
+      "Description": "A gentle boat ride through a magical, fantasy-themed waterway.",
+      "Image": "./rideimages/image19.jpg",
+      "Category": "Kids Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 34
+    },
+    {
+      "Name": "Haunted Mansion",
+      "Description": "A spooky yet family-friendly haunted house experience.",
+      "Image": "./rideimages/image20.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 40
+    },
+    {
+      "Name": "Pirate Adventure",
+      "Description": "Join the crew on a thrilling pirate ship ride across the seas.",
+      "Image": "./rideimages/image21.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 42
+    },
+    {
+      "Name": "Safari Expedition",
+      "Description": "Go on a wild safari ride and see animatronic animals up close.",
+      "Image": "./rideimages/image22.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 38
+    },
+    {
+      "Name": "Space Journey",
+      "Description": "Blast off into space and explore the galaxy on this family ride.",
+      "Image": "./rideimages/image23.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 40
+    },
+    {
+      "Name": "Jungle Cruise",
+      "Description": "Embark on a boat ride through the dense jungle with surprises around every corner.",
+      "Image": "./rideimages/image24.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 38
+    },
+    {
+      "Name": "Mystic River",
+      "Description": "A serene boat ride through a mystic-themed waterway with light effects.",
+      "Image": "./rideimages/image25.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 36
+    },
+    {
+      "Name": "Flying Dragons",
+      "Description": "Fly high on dragon-themed swings that are fun for the whole family.",
+      "Image": "./rideimages/image26.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 42
+    },
+    {
+      "Name": "Time Travel Adventure",
+      "Description": "Travel through different eras in history on this exciting family ride.",
+      "Image": "./rideimages/image17.jpg",
+      "Category": "Family Ride",
+      "FamilyFriendly": true,
+      "HeightRestriction": 40
+    }
+  ],
+  "shows" : [
+    {
+      "Name": "Heroic Battle",
+      "Description": "Watch your favorite superheroes come together for an epic showdown.",
+      "Image": "./showimages/image3.jpg",
+      "Category": "Superhero",
+      "Duration": 30
+    },
+    {
+      "Name": "Superhero Stunt Spectacular",
+      "Description": "An action-packed stunt show featuring incredible feats and daring rescues.",
+      "Image": "./showimages/image4.jpg",
+      "Category": "Superhero",
+      "Duration": 45
+    },
+    {
+      "Name": "Villains vs Heroes",
+      "Description": "See the ultimate clash between the most infamous villains and beloved heroes.",
+      "Image": "./showimages/image5.jpg",
+      "Category": "Superhero",
+      "Duration": 40
+    },
+    {
+      "Name": "Hero Academy",
+      "Description": "Join a training session where superheroes demonstrate their powers and skills.",
+      "Image": "showimages/image6.jpg",
+      "Category": "Superhero",
+      "Duration": 35
+    },
+    {
+      "Name": "Justice League Live",
+      "Description": "Experience the Justice League in action as they save the world.",
+      "Image": "./showimages/image7.jpg",
+      "Category": "Superhero",
+      "Duration": 50
+    },
+    {
+      "Name": "Superhero Musical",
+      "Description": "A musical extravaganza featuring songs and dances from popular superhero movies.",
+      "Image": "./showimages/image9.jpg",
+      "Category": "Superhero",
+      "Duration": 60
+    },
+    {
+      "Name": "Mario Kart Live",
+      "Description": "Watch as Mario and friends race through a real-life Mario Kart course.",
+      "Image": "./showimages/image10.jpg",
+      "Category": "Mario",
+      "Duration": 30
+    },
+    {
+      "Name": "Princess Peach's Party",
+      "Description": "Join Princess Peach for a fun-filled party with games and entertainment.",
+      "Image": "./showimages/image11.jpg",
+      "Category": "Mario",
+      "Duration": 40
+    },
+    {
+      "Name": "Bowser's Challenge",
+      "Description": "Witness Bowser and Mario face off in an epic showdown.",
+      "Image": "./showimages/image14.jpg",
+      "Category": "Mario",
+      "Duration": 35
+    },
+    {
+      "Name": "Luigi's Mansion Adventure",
+      "Description": "Follow Luigi on a spooky adventure to capture ghosts and save the day.",
+      "Image": "./showimages/image17.jpg",
+      "Category": "Mario",
+      "Duration": 45
+    },
+    {
+      "Name": "Yoshi's Island Safari",
+      "Description": "Join Yoshi on a safari through a vibrant, animated island.",
+      "Image": "./rideimages/image15.jpg",
+      "Category": "Mario",
+      "Duration": 25
+    },
+    {
+      "Name": "Super Mario Musical",
+      "Description": "A lively musical featuring all your favorite characters from the Mario universe.",
+      "Image": "./showimages/image15.jpg",
+      "Category": "Mario",
+      "Duration": 50
+    },
+    {
+      "Name": "Mickey's Magical Parade",
+      "Description": "Enjoy a whimsical parade with Mickey and all his Disney friends.",
+      "Image": "./showimages/image16.jpg",
+      "Category": "Disney",
+      "Duration": 30
+    },
+    {
+      "Name": "Frozen Sing-Along",
+      "Description": "Sing along with Anna, Elsa, and Olaf in this interactive show.",
+      "Image": "./showimages/image17.jpg",
+      "Category": "Disney",
+      "Duration": 35
+    },
+    {
+      "Name": "Pirates of the Caribbean Adventure",
+      "Description": "Join Captain Jack Sparrow on a swashbuckling adventure.",
+      "Image": "./showimages/image18.jpg",
+      "Category": "Disney",
+      "Duration": 45
+    },
+    {
+      "Name": "Beauty and the Beast Live",
+      "Description": "Experience the enchanting story of Beauty and the Beast live on stage.",
+      "Image": "./showimages/image19.jpg",
+      "Category": "Disney",
+      "Duration": 50
+    },
+    {
+      "Name": "Disney Princess Dance Party",
+      "Description": "Dance and sing with your favorite Disney princesses.",
+      "Image": "./showimages/image18.jpg",
+      "Category": "Disney",
+      "Duration": 40
+    },
+    {
+      "Name": "Toy Story Mania",
+      "Description": "Join Woody, Buzz, and the gang for a fun-filled Toy Story adventure.",
+      "Image": "./showimages/image21.jpg",
+      "Category": "Disney",
+      "Duration": 30
+    },
+    {
+      "Name": "Galactic Journey",
+      "Description": "Travel through the cosmos in this spectacular space-themed show.",
+      "Image": "./showimages/image22.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 40
+    },
+    {
+      "Name": "Star Warriors",
+      "Description": "Join the star warriors in their battle to save the galaxy.",
+      "Image": "./showimages/image23.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 45
+    },
+    {
+      "Name": "Alien Encounter",
+      "Description": "Experience a thrilling encounter with extraterrestrial beings.",
+      "Image": "./showimages/image24.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 30
+    },
+    {
+      "Name": "Cosmic Dance Party",
+      "Description": "Dance the night away with aliens and astronauts under the stars.",
+      "Image": "./showimages/image19.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 35
+    },
+    {
+      "Name": "Journey to the Moon",
+      "Description": "Join a mission to the moon in this exciting space adventure.",
+      "Image": "./showimages/image25.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 50
+    },
+    {
+      "Name": "Starlight Spectacular",
+      "Description": "A dazzling light show set to the music of the cosmos.",
+      "Image": "./showimages/image21.jpg",
+      "Category": "Galaxy/Universe",
+      "Duration": 60
+    }
+  ]
+  
+}
