@@ -13,7 +13,7 @@ import CreateNewAccount from '../Pages/CreateNewAccount'
 
  export default function AppRoute() {
    return (
-         <div>
+         <div className="background-color">
              <Routes>
                   <Route index element={<AdventureGalaxy/>} />
 

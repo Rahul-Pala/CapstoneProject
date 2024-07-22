@@ -1,0 +1,90 @@
+1. Purpose and Scope
+Objective: Develop a user-friendly, visually appealing, and responsive website for sharing food and coffee pictures, recipes, and related content.
+Scope: The website will include sections for food and coffee recipes and user interaction features.
+Target audience: People between 15 and 60 years of age who are interested in learning and trying out food recipes.
+
+
+2. Functional Requirements
+User Interface Components
+Homepage:
+
+Header:
+Website branding name.
+Navigation menu (Home, About,Italian recipes, Savoury and sweet recipes, Coffee, Contact).
+
+Body:
+Login form:
+-Email address
+-Password
+-Checkbox
+-Sign In buttom
+Pictures of person enjoying food.
+
+Footer:
+Contact information.
+Newsletter signup.
+Social media links.
+
+
+Recipe Section:
+Thumbnail images, titles, brief descriptions.
+
+Recipe Detail Page:
+High-quality images of the dish.
+Ingredient list with quantities.
+Step-by-step cooking instructions.
+Cooking time, difficulty level, and serving size.
+Coffee Section:
+
+Coffee Recipes:
+Categorized listings (e.g., Espresso, Pour-over, Cold Brew, Latte).
+Detailed recipe pages with ingredients.
+
+
+3. Design and Layout
+Responsive Design:
+Ensure the website is fully responsive and adapts to various screen sizes (desktops, tablets, smartphones).
+Consistent Branding:
+Use of consistent color schemes, fonts, and branding elements.
+User-Friendly Navigation:
+Intuitive and accessible navigation structure.
+Visual Appeal:
+High-quality images and engaging visual elements.
+Accessibility:
+Compliance with WCAG 2.1 guidelines.
+
+4. Non-Functional Requirements
+4.1 Performance
+Load Time:
+Ensure all pages load within 3 seconds on standard broadband connections.
+Optimization:
+Optimize images, videos, and other media for fast loading without compromising quality.
+4.2 Usability
+Intuitive Design:
+Ensure that the website is easy to navigate and use, with clear calls-to-action.
+Cross-Browser Compatibility:
+Ensure compatibility across all major browsers (Chrome, Firefox, Safari, Edge).
+4.3 Security
+
+5. Technical Requirements
+Frameworks and Libraries:
+Build website using front-end frameworks React.
+Responsive Frameworks:
+Utilize frameworks like Bootstrap or Materialize for responsive design.
+Version Control:
+Use of version control systems like Git for managing code.
+
+6. Project Management
+Timeline:
+Design and prototyping: 1 day.
+Development: 4 Days.
+Testing and QA: 1 day.
+Launch: 10/06/2024.
+
+Question 10. 
+How might you extend the features of your application in future?
+1. I would make the page more interactive. For example, if the user clicks on view details, a new page opens up showing all the 
+information. 
+2. I would make page interactive by allowing users to give reviews and rating.
+
+
