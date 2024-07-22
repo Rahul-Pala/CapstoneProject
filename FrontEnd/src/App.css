@@ -1,0 +1,28 @@
+div{
+    width: 100%;
+}
+
+.background {
+    background-size: auto;
+    /* background-image: url('../public/CoffeeBackground1.jpg'); */
+    background-color: burlywood;
+    background-repeat: repeat;
+    min-height: 93vh;
+    width: 100%;
+  }
+
+  .h1{
+    color:azure;
+    background-color: rgb(232, 25, 56);
+    font-size: 200%;
+    font-family:"Orbitron", sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .h2{
+    color: azure;
+    text-align: center;
+    background-color: bisque;
+  }
