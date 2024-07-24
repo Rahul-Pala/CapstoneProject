@@ -14,7 +14,7 @@ export default function SingleRide(props) {
       <CardMedia
         sx={{ height: 220 }}
         image={props.Image}
-        title="green iguana"
+        title="Rides"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -30,10 +30,10 @@ export default function SingleRide(props) {
         </Typography>
       </CardContent>
       <CardActions>
-      <DatePicker/>
-      </CardActions>
-      <CardActions>
-        <RatingStars/> 
+      <DatePicker aId={props.id}/>
+      </CardActions> 
+      <CardActions> 
+        <RatingStars aId={props.id}/> 
         </CardActions>
      
       

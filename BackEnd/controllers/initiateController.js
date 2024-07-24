@@ -25,7 +25,7 @@ const storeAttractions = async (res) => {
 const storeShows = async (res) => {
     try {
 
-    let response = await axios.get('http://localhost:3000/show')
+    let response = await axios.get('http://localhost:3000/shows')
     
         const shows = response.data;
         console.log(shows)

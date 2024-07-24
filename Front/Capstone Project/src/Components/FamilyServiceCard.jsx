@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import DatePicker from './DatePicker';
 
-export default function FamilyServiceCards() {
+export default function FamilyServiceCards(props) {
     const navigate = useNavigate()
     const services = [{ServiceType: "Baby Care Room", description: "A comfortable and private room equipped with changing tables. nursing chairs, and a microwave for warming bottles and baby food. The room also includes a play area for toddlers to keep them entertained.", AvailabilityStatus: "Available", Location: "East Galaxy",image: "./serviceimages/image1.png"  },
         {ServiceType: "Quiet Room", description: "A serene and calming space designed for families with special needs children who might need a break from the sensory overload of the park. The room features soft lighting, comfortable seating, and sensory-friendly toys.", AvailabilityStatus: "Available", Location: "West Galaxy",image: "./serviceimages/image2.jpg" },
@@ -41,7 +41,7 @@ export default function FamilyServiceCards() {
       </CardContent>
 
       <CardActions>
-      <DatePicker/>
+      <DatePicker fsId = {props.id}/>
       </CardActions>
     </Card>
     </Grid>)} </Grid>

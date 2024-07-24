@@ -28,7 +28,7 @@ export default function SingleShow(props) { console.log(props.Image)
         
       </CardContent>
       <CardActions>
-        <RatingStars/>
+        <RatingStars aId={props.id}/>
         </CardActions>
     </Card>
   );

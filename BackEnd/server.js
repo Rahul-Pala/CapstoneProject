@@ -1,5 +1,9 @@
 const express = require('express')
+const cors = require("cors");
 const app = express()
+const corsOptions = {
+    origin: "http://localhost:5173"
+};
 let userRoutes = require('./routes/userRoutes');
 let attractionRoutes = require('./routes/attractionRoutes');
 let showRoutes = require('./routes/showRoutes');
@@ -7,7 +11,7 @@ let queueRoutes = require('./routes/queueRoutes');
 let adrenalineRoutes = require('./routes/adrenalineRoutes');
 let serviceRoutes = require('./routes/serviceRoutes');
 
-
+app.use(cors(corsOptions));
 require("dotenv").config();
 let dbConnect = require("./dbConnect");
 app.use(express.json()); //Use to do put method.

@@ -7,7 +7,7 @@ import { Grid } from '@mui/material';
 
 export default function RideList() {
     
-const data = useData(`http://localhost:3000/attractions`);
+const data = useData(`http://localhost:8080/api/attraction`);
 const [currentRides, setCurrentRides] = useState([]);
 useEffect(() => {
 setCurrentRides(data)
@@ -21,7 +21,7 @@ return(
  <Grid container spacing={4} sx={{width:'70em'}}>
                 {currentRides?.map((ride, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-      <SingleRide Name={ride.Name} Description={ride.Description} Image={ride.Image} Category={ride.Category}></SingleRide>
+      <SingleRide id={ride._id} Name={ride.Name} Description={ride.Description} Image={ride.Image} Category={ride.Category}></SingleRide>
       </Grid>))} </Grid>
   </div>
   <div>

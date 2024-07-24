@@ -6,7 +6,7 @@ export default function Tickets() {
   return (
     <div>
       <h1 className='heading'>TICKETS</h1>
-      <SingleTicket/> <br/><br/>
+      {/* <SingleTicket/> <br/><br/> */}
       <TicketCards/>
       </div>
   )

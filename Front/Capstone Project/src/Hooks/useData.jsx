@@ -15,7 +15,7 @@ const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
                 .then(response => response.json())
                 .then(json => {
                     if (!ignore) {
-                        setData(json);
+                        setData(json.data);
                     }
                 });
 

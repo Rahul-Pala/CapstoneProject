@@ -7,7 +7,7 @@ import { Grid } from '@mui/material';
 
 export default function ShowList() {
     
-const data = useData(`http://localhost:3000/shows`);
+const data = useData(`http://localhost:8080/api/show`);
 const [currentShows, setCurrentShows] = useState([]);
 useEffect(() => {
 setCurrentShows(data)

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import useCounter from './useCounter'
 
-function CountA() {
+function CountA(props) {
     const {count, Increment, Decrement} = useCounter(0)
+    useEffect(() => {
+      props.setTotal(parseInt(count * 70))
+    },[count])
 
 
   return (
