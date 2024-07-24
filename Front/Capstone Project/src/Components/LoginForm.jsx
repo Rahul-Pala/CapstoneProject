@@ -16,6 +16,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useUserContext } from '../Context/UserContext';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import { useData } from '../Hooks/useData';
 
 
 
@@ -26,48 +27,50 @@ const defaultTheme = createTheme();
 
 export default function SignIn() {
   const{user, setUser} = useUserContext()
+  const data = useData(`http://localhost:8080/api/users`);
   const [LUserName, setLUserName] = useState('')
   const [LPassWord, setLPassWord] = useState('')
   const [users, setUsers] = useState('')
-  const [validateMsg, setValidateMsg] = useState('')
+  const [validateMsg, setValidateMsg] = useState(null)
   let navigate = useNavigate();
   //get the users
-  useEffect(()=> {
-    console.log('Fetching user information')
-    axios.get('http://localhost:8080/api/users/')
-    .then(response=> {console.log(response); setUsers(response.data.data);})
-    .catch(error => {console.log(error)})
-    },[])
+  useEffect(() => {
+      setUsers(data ? data:[])
+      }, [data]
+      )
     //username & password in if condition, seperate if telling user which to change
     //more states for error message, results, username didn't match, password matches but user doesn't
     //etc - redirect if both are successful
     //where to think about, where to store information (context) available to all refresh will remove
     //stored data - localStorage https://blog.logrocket.com/using-localstorage-react-hooks/
     //validate the logins
-    const handleSubmit=()=>
+    const handleSubmit=(e)=>
+      e.preventDefault()
     {
       let matchedUserName=false
         for (let u of users)
         {
-          if (LUserName===u.UserName)
+          console.log(u, "Username")
+          if (LUserName===u?.UserName)
           {
+            console.log(u, "password verification")
             matchedUserName=true
-            if (LPassWord===u.Password)
+            if (LPassWord===u?.Password)
             {
-              console.log(u.UserName, u.Password, u._id)
-              setCurrentUser(u)
+              console.log(u?.UserName, u?.Password, u?._id)
+              setUser(u)
               console.log(u)
               navigate('/');
             }
             else
             {
-                setValidateMsg('Incorrect password, please try again.');
+                alert('Incorrect password, please try again.');
             }
           }
         }
         if (!matchedUserName)
         {
-          setValidateMsg('Incorrect username, please register first.');
+          alert('Incorrect username, please register first.');
         }
     }
   // const handleSubmit = (event) => {
@@ -91,6 +94,7 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
+          
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
           </Avatar>
@@ -103,7 +107,7 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="User"
               name="email"
               autoComplete="email"
               autoFocus
