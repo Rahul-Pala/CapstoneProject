@@ -8,36 +8,25 @@ import Typography from '@mui/material/Typography';
 import DatePicker from './DatePicker';
 import RatingStars from './RatingStars';
 
-export default function SingleRide(props) {
+export default function SingleQueue(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 220 }}
-        image={props.Image}
-        title="Rides"
-      />
+      
       <CardContent>
+       {/* { props.queuing? */}
         <Typography gutterBottom variant="h5" component="div">
-        {props.Name}
+            Booked for : 
+        {props.ReservationTime.slice(0, 10)} <br/>
+        at : 
+        {props.ReservationTime.slice(11, 16)} pm
         </Typography>
+         {/* : null} */}
 
-        <Typography variant="body2" color="red">
-         Category: {props.Category}
-        </Typography>
-        
-        <Typography variant="body2" color="text.secondary">
-        {props.Description}
-        </Typography>
+       
       </CardContent>
       <CardActions>
-      <DatePicker aId={props.id} uid={props.UserID}/>
+      <DatePicker aId={props.id} uid={props.UserID} RT={props.ReservationTime} qid={props.id}/>
       </CardActions> 
-      <CardActions> 
-        <RatingStars aId={props.id} uid={props.UserID}/> 
-        </CardActions>
-     
-      
-      
     </Card>
   );
 }

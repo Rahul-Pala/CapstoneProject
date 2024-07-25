@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { NavLink, useNavigate } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import { useUserContext } from '../Context/UserContext';
-const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: 'Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, ];
+const pages = [{title: 'Attractions', link: '/attractions'}, {title: 'Family Services', link: '/familyservice'}, {title: 'Tickets', link: '/tickets'}, {title: 'About', link: '/about'}, {title: 'Reservations', link: '/reservation'} ];
 const settings = [{title: 'Create Account', link: '/createaccount'}, {title: 'Dashboard', link: '/dashboard'}, {title: 'Logout', link: '/logout'}];
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -51,11 +51,11 @@ export default function NavBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
-            {user?.email}
+            {user?.UserName}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

@@ -5,25 +5,28 @@ import SingleRide from './SingleRide';
 import { useData } from '../Hooks/useData';
 import { Grid } from '@mui/material';
 import { useUserContext } from '../Context/UserContext';
+import SingleQueue from './SingleQueue';
 
-export default function RideList() {
+export default function QueueList() {
     
-const data = useData(`http://localhost:8080/api/attraction`);
-const [currentRides, setCurrentRides] = useState([]);
+const data = useData(`http://localhost:8080/api/queue`);
+const [currentQueues, setCurrentQueues] = useState([]);
 const{user, setUser} = useUserContext()
 useEffect(() => {
-setCurrentRides(data)
+  const filteredArray = data?.filter((queue) => queue.UserID === user._id)
+  console.log(filteredArray)
+setCurrentQueues(filteredArray)
 }, [data]
 )
-console.log(currentRides)
+console.log(currentQueues)
 
 return(
 <>
  <div className="componentBox background">
  <Grid container spacing={4} sx={{width:'70em'}}>
-                {currentRides?.map((ride, index) => (
+                {currentQueues?.map((queue, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-      <SingleRide UserID={user._id}id={ride._id} Name={ride.Name} Description={ride.Description} Image={ride.Image} Category={ride.Category}></SingleRide>
+      <SingleQueue UserID={queue.UserID}id={queue._id} Attracion={queue.AttractionID} Service={queue.ServiceID} ReservationTime={queue.ReservationTime} Queuing={queue.Queuing}></SingleQueue>
       </Grid>))} </Grid>
   </div>
   <div>

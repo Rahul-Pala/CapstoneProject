@@ -26,7 +26,7 @@ export default function RatingStars(props) {
   const [value, setValue] = React.useState(2);
   const [hover, setHover] = React.useState(-1);
   const ReserveDate = () => {
-    const reviewObject = {UserID: null, AttractionID: props?.aId, ShowID:props?.sId,
+    const reviewObject = {UserID: props?.uid, AttractionID: props?.aId, ShowID:props?.sId,
       Rating: value, Review: null
      }
     axios.post("http://localhost:8080/api/adrenaline/create", reviewObject)

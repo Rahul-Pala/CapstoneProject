@@ -13,10 +13,36 @@ export default function DatePicker(props) {
   const [value, setValue] = React.useState(null);
   const{user, setUser} = useUserContext()
   const ReserveDate = () => {
-    const queueObject = {UserID: null, AttractionID: props?.aId, ShowID:props?.sId, ServiceID:props?.fsId,
+    const queueObject = {UserID: props?.uid, AttractionID: props?.aId, ShowID:props?.sId, ServiceID:props?.fsId,
       ReservationTime: value, Queuing: true
      }
+
+    
+    const editqueue = axios.put(`http://localhost:8080/api/queue/${props.qid}`, {ReservationTime:props.RT})
     axios.post("http://localhost:8080/api/queue/create", queueObject)
+        .then(response => { 
+            console.log(response.data.data);
+         })
+        .catch(error => { 
+            console.log(error);
+            return Promise.reject(error);
+        })
+  }
+  const EditDate = () => {
+     
+    axios.put(`http://localhost:8080/api/queue/${props.qid}`, {ReservationTime:value})
+        .then(response => { 
+            console.log(response.data.data);
+         })
+        .catch(error => { 
+            console.log(error);
+            return Promise.reject(error);
+        })
+  }
+
+  const DeleteDate = () => {
+     
+    axios.delete(`http://localhost:8080/api/queue/${props.qid}` )
         .then(response => { 
             console.log(response.data.data);
          })
@@ -37,7 +63,7 @@ export default function DatePicker(props) {
         <Typography>
           Reservation: {value == null ? 'null' : value.format()}
         </Typography>
-        <Button onClick={ReserveDate}>Confirm</Button>
+      {  props.qid?<><Button onClick={EditDate}>Edit</Button ><br/><Button onClick={DeleteDate}>Delete</Button ></>  :<Button onClick={ReserveDate}>Confirm</Button >}
       </Stack>
     </LocalizationProvider>
   );

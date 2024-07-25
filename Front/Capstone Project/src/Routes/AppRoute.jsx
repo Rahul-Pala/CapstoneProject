@@ -9,6 +9,7 @@ import Tickets from '../Pages/Tickets'
 import About from '../Pages/About'
 import PageNotFound from '../Pages/PageNotFound'
 import CreateNewAccount from '../Pages/CreateNewAccount'
+import Reservation from '../Pages/Reservation'
 
 
  export default function AppRoute() {
@@ -19,7 +20,8 @@ import CreateNewAccount from '../Pages/CreateNewAccount'
 
                   <Route path="attractions" element={<Attractions/>} />
                         
-                        
+                  <Route path='/reservation' element={<Reservation/> } />
+                
                         <Route path="rides" element={<Rides/>}></Route>
                         
                         

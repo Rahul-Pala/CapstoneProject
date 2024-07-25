@@ -45,8 +45,9 @@ export default function SignIn() {
     //stored data - localStorage https://blog.logrocket.com/using-localstorage-react-hooks/
     //validate the logins
     const handleSubmit=(e)=>
-      e.preventDefault()
+     
     {
+      e.preventDefault()
       let matchedUserName=false
         for (let u of users)
         {
